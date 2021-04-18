@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;600&display=swap');
+body{
+    font-family: 'Antonio', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head_part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    justify-content: space-between;
+    background: #009688;
+}
+.logo {
+    width: 30%;
+    padding-left: 10px;
+}
+.logo h2{
+    margin: 0;
+    color: #fff;
+}
+.nav_menu {
+    width: 65%;
+}
+.nav_menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+}
+.nav_menu ul li {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
+.nav_menu ul li:hover {
+    background: coral;
+}
+.nav_menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+.banner_part{}
+.banner_part img {
+    width: 100%;
+}
+.welcome_part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.link_part {
+    width: 15%;
+}
+.link_part h4{
+    text-transform: capitalize;
+}
+.link_part ul, .about_right ul{
+    padding: 0;
+}
+.link_part ul li, .about_right ul li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+.link_part ul li a, .about_right ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    padding-left: 5px;
+}
+.welcome_content{
+    width: 80%;
+}
+.welcome_top_part{
+   
+}
+.welcome_top_part p{}
+.welcome_bottom_part {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mission_part{
+    width: 50%;
+}
+.mission_part h4{
+    text-transform: capitalize;
+}
+.vission_part{
+    width: 50%;
+}
+.vission_part h4{
+    text-transform: capitalize;
+}
+.services_part {
+    background: #F7F1F1;
+    padding: 10px 0px;
+}
+.services_part h3 {
+    text-align: center;
+    text-transform: capitalize;
+}
+.service_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.single_card {
+    width: 30%;
+}
+.single_card h4 {
+    text-transform: capitalize;
+}
+.single_card img{
+    width: 100%;
+}
+.single_card p {
+    text-align: justify;
+}
+.single_card button, .about_left button {
+    border: none;
+    background: tomato;
+    padding: 5px 10px;
+}
+.single_card button:hover, .about_left button:hover {
+    
+    background: rgb(63, 156, 209);
+    
+}
+.single_card button a, .about_left button a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+}
+.single_card button:hover a, .about_left button:hover a {
+    
+    color: rgb(252, 249, 249);
+}
+.about_part {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.about_left {
+    flex-basis: 80%;
+}
+.about_left h4{
+    text-transform: capitalize;
+}
+.about_left p{}
+.about_left button{}
+.about_left button a{}
+.about_right{
+    flex-basis: 15%;
+}
+.about_right h4{
+    text-transform: capitalize;
+}
+.about_right ul{}
+.about_right ul li{}
+.about_right ul li a{}
+.footer_top_part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.single_footer:nth-child(1){
+    flex-basis: 20%;
+}
+.single_footer:nth-child(2){
+    flex-basis: 35%;
+}
+.single_footer:nth-child(3){
+    flex-basis: 40%;
+}
+.single_footer h4 {
+    text-transform: capitalize;
+}
+.single_footer p {
+    text-align: justify;
+}
+.footer{
+    background: #008080;
+}
+.footer h4{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* Medium layout: (min-width: 992px) and (max-width: 1200px) */
+@media(max-width: 1200px){
+
+}
+/* Tablet layout:(min-width: 768px) and (max-width: 991px) */
+@media(max-width: 991px){
+
+}
+/* Wide mobile layout:(min-width: 480px) and (max-width: 767px) */
+@media(max-width: 767px){
+ 
+}
+/* mobile layout: 320px */
+@media(max-width: 479px){
+    .container{
+        width: 300px;
+    }
+    .nav_menu {
+        width: 100%;
+    }
+    .nav_menu ul {
+        justify-content: space-around;
+        padding: 0;
+    }
+    .nav_menu ul li {
+        margin: 0;
+    }
+    .head_part {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .welcome_part {
+        flex-direction: column;
+    }
+    .link_part {
+        width: 100%;
+    }
+    .link_part h4,.about_right h4{
+        text-align: center;
+    }
+    .link_part ul, .about_right ul {
+        display: table;
+        margin: 0 auto;
+    }
+    .welcome_content {
+        width: 100%;
+    }
+    .welcome_top_part {
+        padding-top: 10px;
+    }
+    .welcome_bottom_part {
+        justify-content: space-between;
+    }
+    .mission_part, .vission_part{
+        width: 46%;
+    }
+    .welcome_top_part, .mission_part, .vission_part {
+        text-align: justify;
+    }
+    .single_card {
+        /* width: 30%; */
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    .about_part {
+        flex-direction: column;
+    }
+    .about_left {
+        text-align: justify;
+        padding-bottom: 10px;
+    }
+    .footer_top_part {
+        flex-direction: column;
+ 
+    }
+    .single_footer:nth-child(1), .single_footer:nth-child(2), .single_footer:nth-child(3){
+        flex-basis: 100%;
+    }
+}
